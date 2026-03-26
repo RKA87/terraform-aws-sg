@@ -8,3 +8,13 @@ variable "project" {
   type        = string
 }
 
+variable "sg_name" {
+  description = "The name of the security group."
+  type        = string
+}
+
+variable "sg_tags" {
+  description = "Additional tags to apply to the security group."
+  type        = map(string)
+  default     = {}
+}
