@@ -4,5 +4,4 @@ locals {
     Project     = "${var.project}"
     Deployment  = "terraform"
   }
-
 }

@@ -13,6 +13,11 @@ variable "sg_name" {
   type        = string
 }
 
+variable "vpc_id" {
+  description = "The ID of the VPC where the security group will be created."
+  type        = string
+}
+
 variable "sg_tags" {
   description = "Additional tags to apply to the security group."
   type        = map(string)

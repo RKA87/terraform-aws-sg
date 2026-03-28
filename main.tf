@@ -1,6 +1,6 @@
 resource "aws_security_group" "this" {
   description = "Security group for ${var.project} in ${var.environment} for component ${var.sg_name}"
-  vpc_id      = data.aws_ssm_parameter.vpc_id.value
+  vpc_id      = var.vpc_id
 
   egress {
     from_port   = 0
